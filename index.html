@@ -3,124 +3,157 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bon Dơng Phi Linh - Hồ sơ cá nhân</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- FontAwesome for icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-  
+  <title>Bon Dơng Phi Linh — Hồ sơ cá nhân</title>
+  <meta name="description" content="Bon Dơng Phi Linh — Sinh viên Công nghệ Thông tin tại Đại học Đà Lạt. Portfolio, kỹ năng, dự án và thông tin liên hệ." />
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" defer></script>
 </head>
 <body>
+  <header class="site-header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Chính">
+      <div class="nav-left">
+        <a class="logo" href="#home" aria-label="Về trang chủ">PL</a>
+      </div>
 
-  <!-- 🌐 Navbar -->
-  <nav class="navbar">
-    <div class="logo">PL</div>
-    <ul>
-      <li><a href="#home" class="active">Trang chủ</a></li>
-      <li><a href="#about">Thông tin</a></li>
-      <li><a href="#skills">Kỹ năng</a></li>
-      <li><a href="#experience">Kinh nghiệm</a></li>
-      <li><a href="#education">Học vấn</a></li>
-      <li><a href="https://github.com/Linh-nood" target="_blank">GitHub</a></li>
-      <li><a href="#">YouTube</a></li>
-    </ul>
-    <div class="theme-toggle">🌞</div>
-  </nav>
+      <button class="nav-toggle" aria-controls="primary-navigation" aria-expanded="false" aria-label="Mở menu">
+        <span class="hamburger"></span>
+      </button>
 
-  <!-- 📄 Profile Content -->
-  <div class="container" id="home">
-    <div class="header">
-      <img src="unnamed.jpg" alt="Avatar" />
-      <h1>Bon Dơng Phi Linh</h1>
-      <p>Sinh viên Công nghệ Thông tin | Đà Lạt</p>
+      <ul id="primary-navigation" class="nav-list">
+        <li><a href="#home" class="nav-link">Trang chủ</a></li>
+        <li><a href="#about" class="nav-link">Thông tin</a></li>
+        <li><a href="#skills" class="nav-link">Kỹ năng</a></li>
+        <li><a href="#experience" class="nav-link">Kinh nghiệm</a></li>
+        <li><a href="#education" class="nav-link">Học vấn</a></li>
+        <li><a href="https://github.com/Linh-nood" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="#" target="_blank" rel="noopener">YouTube</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <button class="theme-toggle" aria-pressed="false" title="Chuyển đổi chế độ sáng/tối">🌞</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home" class="container" role="main">
+    <section class="hero header" aria-labelledby="profile-name">
+      <img class="avatar" src="unnamed.jpg" alt="Ảnh đại diện của Bon Dơng Phi Linh" />
+      <h1 id="profile-name">Bon Dơng Phi Linh</h1>
+      <p class="subtitle">Sinh viên Công nghệ Thông tin | Đại học Đà Lạt</p>
+
       <div class="social">
-        <a href="https://github.com/Linh-nood" target="_blank">GitHub</a>
-        <a href="mailto:2212402@dlu.edu.vn">Email</a>
+        <a class="btn" href="https://github.com/Linh-nood" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i> GitHub</a>
+        <a class="btn" href="mailto:2212402@dlu.edu.vn"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
       </div>
-      <div class="Trangchu">
-        <div class="info-container">
-          <div class="info-card">
-            <div class="icon">
-              <i class="fas fa-birthday-cake"></i>
-            </div>
-            <div class="text">
-              <div class="title">NGÀY SINH</div>
-              <div class="value">22/06/2004</div>
-            </div>
+
+      <div class="info-cards" aria-label="Thông tin tóm tắt">
+        <article class="info-card" aria-labelledby="dob">
+          <div class="icon"><i class="fas fa-birthday-cake" aria-hidden="true"></i></div>
+          <div class="text">
+            <div id="dob" class="title">Ngày sinh</div>
+            <div class="value">22/06/2004</div>
           </div>
-      
-          <div class="info-card">
-            <div class="icon">
-              <i class="fas fa-briefcase"></i>
-            </div>
-            <div class="text">
-              <div class="title">CÔNG VIỆC HIỆN TẠI</div>
-              <div class="value">Sinh viên tại khoa CNTT, ĐH Đà Lạt</div>
-            </div>
+        </article>
+
+        <article class="info-card" aria-labelledby="current-role">
+          <div class="icon"><i class="fas fa-briefcase" aria-hidden="true"></i></div>
+          <div class="text">
+            <div id="current-role" class="title">Công việc hiện tại</div>
+            <div class="value">Sinh viên Khoa CNTT, Đại học Đà Lạt</div>
           </div>
-      
-          <div class="info-card">
-            <div class="icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="text">
-              <div class="title">EMAIL</div>
-              <div class="value">2212402@dlu.edu.vn</div>
-            </div>
+        </article>
+
+        <article class="info-card" aria-labelledby="email">
+          <div class="icon"><i class="fas fa-envelope" aria-hidden="true"></i></div>
+          <div class="text">
+            <div id="email" class="title">Email</div>
+            <div class="value"><a href="mailto:2212402@dlu.edu.vn">2212402@dlu.edu.vn</a></div>
           </div>
-        </div>
+        </article>
       </div>
-      
+    </section>
 
-    </div>
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <h2 id="about-title">Giới thiệu</h2>
+      <p>Xin chào, tôi là Bon Dơng Phi Linh — sinh viên năm cuối Khoa Công nghệ Thông tin, Đại học Đà Lạt. Tôi đam mê phát triển web, đặc biệt là frontend với React, và luôn muốn học hỏi các công nghệ mới để xây dựng sản phẩm có tính thực tế.</p>
+    </section>
 
-    <div class="section about" id="about">
-      <h2>Giới thiệu</h2>
-      <p>Xin chào, tôi là Bon Dơng Phi Linh – sinh viên năm cuối tại Trường Đại học Đà Lạt, khoa Công nghệ Thông tin. Tôi đam mê lập trình web, yêu thích học hỏi và khám phá các công nghệ mới trong lĩnh vực phát triển phần mềm.</p>
-    </div>
+    <section id="skills" class="section skills" aria-labelledby="skills-title">
+      <h2 id="skills-title">Kỹ năng</h2>
+      <ul class="skill-list">
+        <li>HTML</li>
+        <li>CSS (Flexbox, Grid)</li>
+        <li>JavaScript (ES6+)</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <li>MongoDB</li>
+        <li>Git & GitHub</li>
+      </ul>
+    </section>
 
-    <div class="section skills" id="skills">
-      <h2>Kỹ năng</h2>
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>React</span>
-      <span>Node.js</span>
-      <span>MongoDB</span>
-      <span>Git & GitHub</span>
-    </div>
+    <section id="experience" class="section experience" aria-labelledby="exp-title">
+      <h2 id="exp-title">Kinh nghiệm</h2>
 
-    <div class="section experience" id="experience">
-      <h2>Kinh nghiệm làm việc</h2>
-      <div class="job">
-        <h3>làm các dự án cá nhân phục vụ học tập</h3>
-        <p></p>
-        <p></p>
-      </div>
-      <div class="job">
+      <article class="job">
         <h3>Dự án cá nhân: Website Portfolio</h3>
-        <p>2024</p>
-        <p>Xây dựng trang web cá nhân để giới thiệu bản thân và dự án đã làm. Thiết kế giao diện responsive, tích hợp contact form, sử dụng React và CSS Flexbox.</p>
-      </div>
-    </div>
+        <p class="meta">2024</p>
+        <p>Xây dựng trang web cá nhân để giới thiệu bản thân và các dự án. Giao diện responsive, tích hợp form liên hệ (frontend), sử dụng React và CSS Flexbox.</p>
+      </article>
 
-    <div class="section education" id="education">
-      <h2>Học vấn</h2>
-      <div class="education">
+      <article class="job">
+        <h3>Dự án học tập & cá nhân</h3>
+        <p class="meta">Nhiều dự án nhỏ phục vụ học tập</p>
+        <p>Thực hành các kỹ năng lập trình, triển khai trên GitHub Pages, và học cách làm việc với API cùng backend cơ bản.</p>
+      </article>
+    </section>
+
+    <section id="education" class="section education" aria-labelledby="edu-title">
+      <h2 id="edu-title">Học vấn</h2>
+      <div class="education-item">
         <h3>Đại học Đà Lạt (Dalat University)</h3>
         <p>Cử nhân Công nghệ Thông tin (2022 – 2026)</p>
-        <p>Chuyên ngành: Phát triển phần mềm. </p>
+        <p>Chuyên ngành: Phát triển phần mềm</p>
       </div>
-    </div>
-  </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>&copy; <span id="year"></span> Bon Dơng Phi Linh — Đã liên hệ: <a href="mailto:2212402@dlu.edu.vn">2212402@dlu.edu.vn</a></p>
+  </footer>
+
   <script>
-    const toggle = document.querySelector('.theme-toggle');
+    // Theme toggle
+    const themeToggle = document.querySelector('.theme-toggle');
     const body = document.body;
+    const yearEl = document.getElementById('year');
+    yearEl.textContent = new Date().getFullYear();
 
-    toggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-      toggle.textContent = body.classList.contains('dark-mode') ? '🌙' : '🌞';
+    themeToggle.addEventListener('click', () => {
+      const isDark = body.classList.toggle('dark-mode');
+      themeToggle.textContent = isDark ? '🌙' : '🌞';
+      themeToggle.setAttribute('aria-pressed', isDark);
     });
-</script>
 
+    // Simple nav toggle for small screens
+    const navToggle = document.querySelector('.nav-toggle');
+    const navList = document.getElementById('primary-navigation');
+
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true' || false;
+      navToggle.setAttribute('aria-expanded', !expanded);
+      navList.classList.toggle('open');
+    });
+
+    // Close mobile nav when a link is clicked
+    Array.from(navList.querySelectorAll('a')).forEach(link => {
+      link.addEventListener('click', () => {
+        if (navList.classList.contains('open')) {
+          navList.classList.remove('open');
+          navToggle.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+  </script>
 </body>
 </html>
